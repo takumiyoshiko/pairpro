@@ -30,7 +30,7 @@ class MyDataset(Dataset):
             ids2 = []
             for line in f.readlines():
                 label, sentence = line.strip().split("\t")
-                labels.append(int(label))
+                labels.append(int(label == '1'))
                 words = sentence.split(" ")
                 ids = []
                 for word in words:

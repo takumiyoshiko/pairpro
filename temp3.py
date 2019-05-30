@@ -34,6 +34,7 @@ for sentence in sentences:
             sentence2.append(dic2["unk"])
     sentences2.append(sentence2)
 
-a=MyDataLoader("data/test.txt",dic2,10,True,1)
+a = MyDataLoader("data/test.txt",dic2,10,True,1)
 for sample in a:
     print(sample)
+
